@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+
+:root {
+    --primary: #f4ce14;
+    --primary-hover: #caaa0cd8;
+    --white: #ffffff;
+    --secondary: #183153;
+    --dark-gray: #45474b;
+    --light-gray: #b9b9b9;
+    --accent-color: #ff0000;
+}
+
+html {
+    font-size: 62.5%;
+    /* 10px => 10/16 = 0.625 * 100 = 62.5%*/
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #183153;
+    overflow-x: hidden;
+
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+    height: 15%;
+    background-color: #45474b;
+    border-radius: 50px;
+}
+
+/* common class */
+
+.container {
+    max-width: 180rem;
+    margin: 0 auto;
+}
+
+/* header section */
+.header-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-1 {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* section title */
+
+.section-title-wrapper {
+    padding: 2rem 8rem;
+}
+
+.section-title {
+    font-size: 4rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 8px;
+    background-color: var(--primary);
+    bottom: -1rem;
+    left: 0;
+}
+
+/* navbar upper part */
+
+.nav-upper {
+    background-color: var(--primary);
+    padding: 2rem 8rem;
+}
+
+.nav-upper-content {
+    display: flex;
+    align-items: center;
+    gap: 25rem;
+}
+
+.brand-name {
+    font-size: 2.5rem;
+    white-space: nowrap;
+}
+
+.nav-upper-content-right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 5rem;
+}
+
+.search-container {
+    position: relative;
+    width: 40rem;
+}
+
+.search-field {
+    padding: 1.5rem 2rem;
+    width: 100%;
+    outline: 2px solid var(--secondary);
+    outline-offset: -2px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.search-field:focus {
+    outline-color: var(--dark-gray);
+}
+
+.search-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    padding: 1.4rem 2rem;
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+.icon {
+    color: var(--secondary);
+    font-size: 2rem;
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -1rem;
+    font-size: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-weight: 900;
+    color: var(--white);
+    right: -0.5rem;
+    background: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+/* navbar lower part */
+.nav-lower {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 2rem 8rem;
+}
+
+.nav-menu {
+    display: flex;
+    font-size: 1.8rem;
+    gap: 1.5rem;
+}
+
+.nav-menu li {
+    display: flex;
+    gap: 0.5rem;
+    white-space: nowrap;
+}

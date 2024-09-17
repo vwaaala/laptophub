@@ -1,0 +1,74 @@
+/* slider */
+
+:root {
+    --primary: #f4ce14;
+    --primary-hover: #caaa0cd8;
+    --white: #ffffff;
+    --secondary: #183153;
+    --dark-gray: #45474b;
+    --light-gray: #b9b9b9;
+    --accent-color: #ff0000;
+}
+
+.slider-section {
+    display: flex;
+    justify-content: center;
+}
+
+.slider-frame {
+    position: relative;
+    min-height: calc(100vh - 143px);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider-frame .slider-contents {
+    width: 500vw;
+    display: flex;
+}
+
+.slider-btns {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-image {
+    width: 120rem;
+    overflow: hidden;
+    height: 51rem;
+}
+
+.slider-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-left-btn,
+.slider-right-btn {
+    font-size: 4rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.slider-frame .dots {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+}
+
+.slider-frame .dot {
+    background-color: var(--light-gray);
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+}
