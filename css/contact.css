@@ -1,0 +1,93 @@
+:root {
+  --primary: #f4ce14;
+  --primary-hover: #caaa0cd8;
+  --white: #ffffff;
+  --secondary: #183153;
+  --dark-gray: #45474b;
+  --light-gray: #b9b9b9;
+  --accent-color: #c92458;
+}
+
+.contact-section {
+  min-height: calc(100vh - 143px);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--white);
+  gap: 1rem;
+  border-radius: 8px;
+  padding: 2rem 8rem;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 48%;
+}
+.contact-right {
+  width: 48%;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.contact-info a,
+.contact-info address {
+  font-size: 1.3rem;
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.input-field,
+.contact-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-textarea {
+  height: 15.5rem;
+  resize: none;
+}
+
+.contact-btn {
+  padding: 10px 20px;
+  background-color: var(--secondary);
+  color: var(--white);
+  font-size: 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}

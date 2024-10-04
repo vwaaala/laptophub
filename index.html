@@ -2,706 +2,863 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-commerce Site</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/slider.css" />
-    <link rel="stylesheet" href="./css/card.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-commerce Site</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/slider.css" />
+  <link rel="stylesheet" href="./css/card.css" />
+  <link rel="stylesheet" href="./css/mediaQueries.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- AOS JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 
 <body>
-    <header class="header-section">
-        <div class="nav-upper">
-            <div class="container nav-upper-content">
-                <div class="nav-upper-content-left">
-                    <h3 class="brand-name">E-commerce</h3>
-                </div>
+  <header class="header-section">
+    <div class="nav-upper">
+      <div class="container nav-upper-content">
+        <h3 class="brand-name" data-aos-duration="800" data-aos="fade-right" data-aos-delay="50">
+          E-commerce
+        </h3>
 
-                <div class="nav-upper-content-right">
-                    <form class="search-container">
-                        <input type="text" class="search-field" />
-                        <span class="search-btn">Search</span>
-                    </form>
-                    <div class="cart-container flex-1">
-                        <span class="icon"><i class="fa-solid fa-cart-shopping"></i>
-                            <span class="cart-count">1</span>
-                        </span>
-                        <span class="icon-title">Cart</span>
-                    </div>
-                    <div class="flex-1">
-                        <span class="icon"><i class="fa-solid fa-heart"></i>
-                            <span class="cart-count">1</span>
-                        </span>
-                        <span class="icon-title">Wishlist</span>
-                    </div>
-                    <div class="flex-1">
-                        <span class="icon"><i class="fa-regular fa-user"></i> </span>
-                        <span class="icon-title">Account</span>
-                    </div>
-                </div>
-            </div>
+        <form class="search-container" data-aos="fade-left" data-aos-delay="600" data-aos-duration="800">
+          <input type="text" class="search-field" />
+          <span class="search-btn">Search</span>
+        </form>
+
+        <div class="flex-1" data-aos-duration="800" data-aos="fade-up" data-aos-delay="200">
+          <span class="icon"><i class="fa-regular fa-user"></i></span>
+          <span class="icon-title">Account</span>
         </div>
-        <div class="nav-lower">
-            <div class="container nav-lower-content">
-                <ul class="nav-menu">
-                    <li>
-                        All Categories
-                        <span><i class="fa-solid fa-chevron-down"></i></span>
-                    </li>
-                    <li>
-                        USA Variant
-                        <span><i class="fa-solid fa-chevron-down"></i></span>
-                    </li>
-                    <li>
-                        Brand New
-                        <span><i class="fa-solid fa-chevron-down"></i></span>
-                    </li>
-                    <li>
-                        Mac Book
-                        <span><i class="fa-solid fa-chevron-down"></i></span>
-                    </li>
-                    <li>
-                        Gaming Laptop
-                        <span><i class="fa-solid fa-chevron-down"></i></span>
-                    </li>
-                    <li>
-                        UAE Variant
-                        <span><i class="fa-solid fa-chevron-down"></i></span>
-                    </li>
-                    <li>
-                        Student Laptop
-                        <span><i class="fa-solid fa-chevron-down"></i></span>
-                    </li>
-                    <li>Hotline: 0171xxxxxxx</li>
-                </ul>
-            </div>
+      </div>
+    </div>
+
+    <div class="nav-lower">
+      <div class="container nav-lower-content">
+        <ul class="nav-menu" data-aos-duration="800">
+          <li data-aos="fade-up" data-aos-delay="200">
+            All Categories
+            <span><i class="fa-solid fa-chevron-down"></i></span>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="300">
+            USA Variant
+            <span><i class="fa-solid fa-chevron-down"></i></span>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="400">
+            Brand New
+            <span><i class="fa-solid fa-chevron-down"></i></span>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="500">
+            Mac Book
+            <span><i class="fa-solid fa-chevron-down"></i></span>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="600">
+            Gaming Laptop
+            <span><i class="fa-solid fa-chevron-down"></i></span>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="700">
+            UAE Variant
+            <span><i class="fa-solid fa-chevron-down"></i></span>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="800">
+            Student Laptop
+            <span><i class="fa-solid fa-chevron-down"></i></span>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="900">
+            Hotline: 0171xxxxxxx
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- slider -->
+    <section class="slider-section">
+      <div class="slider-frame">
+        <div class="slider-contents">
+          <div class="slider-image">
+            <img src="./images/WhatsApp Image 2024-04-06 at 6.50.14 PM (1).jpeg" alt="" />
+          </div>
+          <div class="slider-image">
+            <img src="./images/WhatsApp Image 2024-04-06 at 6.50.14 PM.jpeg" alt="" />
+          </div>
+          <div class="slider-image">
+            <img src="./images/WhatsApp Image 2024-04-06 at 6.50.15 PM.jpeg" alt="" />
+          </div>
         </div>
-    </header>
-    <main class="container">
-        <!-- slider -->
-        <section class="slider-section">
-            <div class="slider-frame">
-                <div class="slider-contents">
-                    <div class="slider-image">
-                        <img src="./images/WhatsApp Image 2024-04-06 at 6.50.14 PM (1).jpeg" alt="" />
-                    </div>
-                    <div class="slider-image">
-                        <img src="./images/WhatsApp Image 2024-04-06 at 6.50.14 PM.jpeg" alt="" />
-                    </div>
-                    <div class="slider-image">
-                        <img src="./images/WhatsApp Image 2024-04-06 at 6.50.15 PM.jpeg" alt="" />
-                    </div>
-                </div>
-                <div class="slider-btns">
-                    <div class="slider-left-btn">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </div>
-                    <div class="slider-right-btn">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                </div>
+        <div class="slider-btns">
+          <div class="slider-left-btn">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div class="slider-right-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
 
-                <div class="dots">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </section>
+    <!-- new arrival section -->
+    <section class="new-arrival-section">
+      <!-- section title -->
+      <div class="section-title-wrapper" data-aos="fade-right">
+        <h2 class="section-title">New Arrival</h2>
+      </div>
+      <div class="card-container">
+        <!-- card - 1 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
             </div>
-        </section>
-        <!-- new arrival section -->
-        <section class="new-arrival-section">
-            <!-- section title -->
-            <div class="section-title-wrapper">
-                <h2 class="section-title">New Arrival</h2>
+          </div>
+        </div>
+
+        <!-- card - 2 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
             </div>
-            <div class="card-container">
-                <!-- card - 1 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
 
-                <!-- card - 2 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- card - 3 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- card - 4 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-                <!-- card - 5 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-                <!-- card - 5 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-                <!-- card - 5 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-                <!-- card - 5 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
+        <!-- card - 3 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
             </div>
-        </section>
-        <!-- best selling section -->
-        <section class="best-selling-section">
-            <!-- section title -->
-            <div class="section-title-wrapper">
-                <h2 class="section-title">Best Selling</h2>
+          </div>
+        </div>
+
+        <!-- card - 4 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
             </div>
-            <div class="card-container">
-                <!-- card - 1 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- card - 2 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- card - 3 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- card - 4 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-                <!-- card - 5 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-                <!-- card - 5 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-                <!-- card - 5 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-                <!-- card - 5 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <!-- card - 5 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
             </div>
-        </section>
-        <!-- all product section -->
-        <section class="all-product-section">
-            <!-- section title -->
-            <div class="section-title-wrapper">
-                <h2 class="section-title">All Products</h2>
+          </div>
+        </div>
+        <!-- card - 6 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
             </div>
-            <div class="card-container">
-                <!-- card - 1 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- card - 2 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- card - 3 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- card - 4 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-                <!-- card - 5 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-                <!-- card - 6 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-                <!-- card - 7 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-                <!-- card - 8 -->
-                <div class="card">
-                    <div class="card-image-container">
-                        <img src="./images/card-1.jpg" alt="Skin regeneration product " />
-                        <span class="discount">2%</span>
-                        <span class="card-wishlist-icon"><i class="fa-solid fa-heart"></i></span>
-                    </div>
-                    <div class="card-content-container">
-                        <h3 class="card-title">Skin regeneration product</h3>
-                        <p class="short-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                            delectus debitis alias inventore molestiae ex quasi optio
-                            doloribus facilis et? lorem
-                        </p>
-                        <div class="card-centent">
-                            <div class="card-price">
-                                <span class="line-through-price">900$</span>
-                                <p class="unit-price">800$</p>
-                            </div>
-                            <span class="card-button"> Add to Cart </span>
-                        </div>
-                    </div>
-                </div>
-                <span class="see-more-btn">See more</span>
+          </div>
+        </div>
+        <!-- card - 7 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="700">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
             </div>
-        </section>
-    </main>
+          </div>
+        </div>
+        <!-- card - 8 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="800">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- best selling section -->
+    <section class="best-selling-section">
+      <!-- section title -->
+      <div class="section-title-wrapper" data-aos="fade-right">
+        <h2 class="section-title">Best Selling</h2>
+      </div>
+      <div class="card-container">
+        <!-- card - 1 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- card - 2 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- card - 3 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- card - 4 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card - 5 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card - 6 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card - 7 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="700">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card - 8 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="800">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- all product section -->
+    <section class="all-product-section">
+      <!-- section title -->
+      <div class="section-title-wrapper" data-aos="fade-right" data-aos-duration="800">
+        <h2 class="section-title">All Products</h2>
+      </div>
+      <div class="card-container">
+        <!-- card - 1 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- card - 2 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- card - 3 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- card - 4 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card - 5 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card - 6 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card - 7 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="700">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card - 8 -->
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="800">
+          <a href="details.html" target="_blank" class="card-image-container">
+            <img src="./images/card-1.jpg" alt="Skin regeneration product " />
+            <span class="discount">2%</span>
+          </a>
+          <div class="card-content-container">
+            <h3 class="card-title">Skin regeneration product</h3>
+            <p class="short-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              delectus debitis alias inventore molestiae ex quasi optio
+              doloribus facilis et? lorem
+            </p>
+            <div class="card-centent">
+              <div class="card-price">
+                <span class="line-through-price">900$</span>
+                <p class="unit-price">800$</p>
+              </div>
+              <a href="details.html" target="_blank" class="card-button">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="500">
+        <a href="#" class="see-more-btn">See more</a>
+      </div>
+    </section>
+
+    <!-- why choose us -->
+
+    <section class="choose-us-section">
+      <!-- section title -->
+      <div class="section-title-wrapper" data-aos="fade-right" data-aos-duration="800">
+        <h2 class="section-title">Why Choose Us?</h2>
+      </div>
+      <div class="choose-us-contianer">
+        <div class="choose-us-card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="choose-us-icon">
+            <i class="fa-solid fa-hand-peace"></i>
+          </div>
+          <h3 class="choose-us-title">Best Service</h3>
+          <p>
+            We offer a comprehensive suite of premium services that ensure Our
+            eCommerce platform not only performs flawlessly but also provides
+            an exceptional shopping experience for Our customers.
+          </p>
+        </div>
+        <div class="choose-us-card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="choose-us-icon">
+            <i class="fa-solid fa-store"></i>
+          </div>
+          <h3 class="choose-us-title">Best Service</h3>
+          <p>
+            We offer a comprehensive suite of premium services that ensure Our
+            eCommerce platform not only performs flawlessly but also provides
+            an exceptional shopping experience for Our customers.
+          </p>
+        </div>
+        <div class="choose-us-card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="choose-us-icon">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3 class="choose-us-title">Best Service</h3>
+          <p>
+            We offer a comprehensive suite of premium services that ensure Our
+            eCommerce platform not only performs flawlessly but also provides
+            an exceptional shopping experience for Our customers.
+          </p>
+        </div>
+        <div class="choose-us-card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="choose-us-icon">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <h3 class="choose-us-title">Best Service</h3>
+          <p>
+            We offer a comprehensive suite of premium services that ensure Our
+            eCommerce platform not only performs flawlessly but also provides
+            an exceptional shopping experience for Our customers.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!------------------------------------------- footer ---------------------------------------->
+  <footer class="footer">
+    <div class="footer-container container" data-aos="fade-right" data-aos-duration="800">
+      <div class="footer-up">
+        <div class="website-details">
+          <h3>E-commerce</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+            laudantium aperiam fuga earum facere eos! Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Architecto eligendi maiores
+            qui. Quisquam explicabo facilis ea, dolore, veritatis cum placeat
+            dolor, et reiciendis harum voluptatum neque eos? Porro, provident
+            error?
+          </p>
+        </div>
+
+        <div class="footer-details-container footer-up-container" data-aos="fade-right" data-aos-duration="1000">
+          <h3 class="footer-menu-title">Address</h3>
+          <div class="footer-content">
+            <address>
+              Shop # 4A-009A, Block # A, Level #04, Dhaka -1229
+            </address>
+            <address>Shop # 607(5th Floor), Dhaka-1230</address>
+            <p class="license-number"><span>Trade license</span>: 20000</p>
+            <p class="bin-number"><span>Bin Number</span>: 00498187901232</p>
+          </div>
+        </div>
+
+        <div class="footer-menu-container footer-up-container" data-aos="fade-right" data-aos-duration="1200">
+          <h3 class="footer-menu-title">Company</h3>
+          <ul class="footer-content">
+            <li class="footer-menu"> <a href="contact.html" target="_blank">Contact Us</a></li>
+            <li class="footer-menu">About Us</li>
+            <li class="footer-menu">Terms & Conditions</li>
+            <li class="footer-menu">Privacy Policy</li>
+            <li class="footer-menu">My account</li>
+            <li class="footer-menu">Refund & Service Policy</li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-container footer-up-container" data-aos="fade-right" data-aos-duration="1400">
+          <h3 class="footer-menu-title">Contact</h3>
+          <div class="footer-content">
+            <p class="number">
+              Phone: <a href="tel:+88012345678912">+8801234567892</a>
+            </p>
+            <p class="email">
+              Email: <a href="mailto:info@gmail.com">info@gmail.com</a>
+            </p>
+            <p class="license-number"><span>Trade license</span>: 20000</p>
+            <p class="bin-number"><span>Bin Number</span>: 00498187901232</p>
+            <div class="social-icons">
+              <span class="social-icon">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </span>
+              <span class="social-icon">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </span>
+              <span class="social-icon">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </span>
+              <span class="social-icon">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-down">
+        &copy;2024 E-Commerce, All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="./scripts/slider.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

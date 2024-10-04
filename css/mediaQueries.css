@@ -1,0 +1,140 @@
+@media screen and (max-width: 1300px) {
+  /* nav lower part */
+  .nav-lower {
+    display: none;
+  }
+
+  /* details bottom part */
+  .details-bottom-container {
+    grid-template-columns: 2rem 1fr 2rem;
+    grid-template-areas:
+      ". details-bottom-left  ."
+      ".  details-bottom-right .";
+    row-gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  /* navbar */
+  .search-container {
+    display: none;
+  }
+
+  /* slider */
+  .slider-frame .slider-contents {
+    height: 45rem;
+  }
+  /* details upper part */
+  .details-right-content-container .details-description {
+    width: 40rem;
+  }
+  /* details lower part */
+  .details-bottom-left-container .details-bottom-description {
+    width: 100%;
+  }
+  .footer-up {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* navbar */
+  .nav-upper {
+    padding: 2rem 2rem;
+  }
+
+  .icon-title {
+    display: none;
+  }
+  /* slider */
+  .slider-frame .slider-contents {
+    height: 35rem;
+  }
+
+  /* details upper part */
+
+  .details-up-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      ". details-left-image ."
+      ".  details-right-content .";
+    column-gap: 2rem;
+  }
+
+  /* details bottom part */
+  .details-bottom-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      ". details-bottom-left  ."
+      ".  details-bottom-right .";
+    row-gap: 5rem;
+    column-gap: 2rem;
+  }
+
+  .details-right-content-container .details-description {
+    width: 100%;
+  }
+  /* footer */
+  .footer-up {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section-title {
+    font-size: 3rem;
+  }
+  .section-title-wrapper {
+    padding: 2rem 2rem;
+  }
+
+  /* slider */
+
+  .slider-frame .slider-contents {
+    height: 20rem;
+  }
+  /* product card */
+  .card-container {
+    padding: 2rem 2rem;
+  }
+  /* choose us */
+  .choose-us-contianer {
+    padding: 2rem 2rem;
+  }
+
+  .choose-us-card {
+    width: 50rem;
+    height: 25rem;
+  }
+  /* product details */
+  .details-left-image {
+    width: 25rem;
+    height: 35rem;
+  }
+
+  .details-bottom-card-container .details-bottom-right-content {
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+  }
+
+  /* contact us */
+
+  .contact {
+    flex-direction: column;
+    padding: 2rem 2rem;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+  /* footer */
+  .footer-up {
+    grid-template-columns: 1fr;
+  }
+}

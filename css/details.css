@@ -1,0 +1,201 @@
+:root {
+  --primary: #f4ce14;
+  --primary-hover: #caaa0cd8;
+  --white: #ffffff;
+  --secondary: #183153;
+  --dark-gray: #45474b;
+  --light-gray: #b9b9b9;
+  --accent-color: #c92458;
+}
+
+.details-section {
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+.details-up-container {
+  display: grid;
+  grid-template-columns: 7rem minmax(1fr) minmax(1fr) 7rem;
+  gap: 5rem;
+  grid-template-areas: ". details-left-image details-right-content .";
+  justify-content: center;
+  align-items: center;
+}
+
+.details-left-image-container {
+  grid-area: details-left-image;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details-left-image {
+  width: 55rem;
+  height: 60rem;
+}
+
+.details-left-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/************************************************* details up right ****************************************************************/
+.details-right-content-container {
+  grid-area: details-right-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.details-right-content-container .details-title {
+  font-size: 3rem;
+}
+
+.details-right-content-container .details-description {
+  width: 60rem;
+}
+
+.details-right-content-container .details-description,
+.details-right-content-container .unit-price,
+.details-right-content-container .details-discount,
+.details-right-content-container .discount-price,
+.details-right-content-container .stock-status {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.details-right-content-container .details-description span,
+.details-right-content-container .unit-price span,
+.details-right-content-container .details-discount span,
+.details-right-content-container .discount-price span,
+.details-right-content-container .stock-status span {
+  font-weight: 800;
+  text-transform: capitalize;
+  color: var(--secondary);
+}
+
+.details-right-content-container .stock-status {
+  color: var(--accent-color);
+}
+
+.details-right-content-container .details-button {
+  padding: 1rem 3rem;
+  background-color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20rem;
+  transition: all 0.3s ease-in-out;
+  color: var(--secondary);
+}
+
+/* details bottom */
+
+.details-bottom-container {
+  display: grid;
+  grid-template-columns: 7rem repeat(1, 2fr) 1fr 7rem;
+  grid-template-areas: ". details-bottom-left details-bottom-right .";
+  margin-top: 5rem;
+  gap: 2rem;
+}
+
+.details-bottom-left-container {
+  grid-area: details-bottom-left;
+}
+
+.details-bottom-left-container .details-bottom-title,
+.details-bottom-right-container .details-bottom-title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.details-bottom-left-container .details-bottom-description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.details-bottom-right-container {
+  grid-area: details-bottom-right;
+}
+
+.details-bottom-right-container .details-bottom-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-bottom-right-container .details-bottom-card-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.details-bottom-right-container
+  .details-bottom-card-container
+  .details-bottom-left-image {
+  width: 8rem;
+  height: 8.5rem;
+  overflow: hidden;
+}
+.details-bottom-right-container
+  .details-bottom-card-container
+  .details-bottom-left-image
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details-bottom-card-container .details-bottom-right-content {
+  width: 30rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.details-bottom-card-container .details-bottom-right-content h3 {
+  font-size: 2rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.details-bottom-card-container .details-bottom-right-content p {
+  font-size: 1.2rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.details-bottom-card-container
+  .details-bottom-right-content
+  .details-bottom-right-price {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.details-bottom-card-container
+  .details-bottom-right-content
+  .details-bottom-right-price
+  .details-bottom-right-line-through-price {
+  text-decoration: line-through;
+  color: var(--dark-gray);
+}
+
+.details-bottom-card-container
+  .details-bottom-right-content
+  .details-bottom-right-price
+  .details-bottom-right-unit-price {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 2rem;
+}
